@@ -1,0 +1,44 @@
+<title>JavaJam House Jobs</title>
+
+<header>
+    <h1>JavaJam Coffee House</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;
+    <a href="menu.html">Menu</a>&nbsp;&nbsp;&nbsp;
+    <a href="music.html">Music</a>&nbsp;&nbsp;&nbsp;
+    <a href="jobs.html">Jobs</a>
+</nav>
+
+<main>
+    <h2>Jobs at JavaJam</h2>
+
+    <p>Want to work at JavaJam? Fill out the form below to start your application. Required fields are marked with an asterisk(*).</p>
+
+    <form method="post" action="http://webdevbasics.net/scripts/javajam8.php">
+        <label for="name">*Name:</label>
+        <input type="text" id="name" name="name" required><br>
+    
+        <label for="email">*Email:</label>
+        <input type="email" id="email" name="email" required><br>
+    
+        <label for="experience">*Experience:</label>
+        <textarea id="experience" name="experience" required></textarea><br>
+    
+        <label for="jobPosition">Select Job Position:</label>
+        <select id="jobPosition" name="jobPosition">
+            <option value="barista">Barista</option>
+            <option value="manager">Manager</option>
+            <option value="musician">Musician</option>
+        </select><br>
+    
+        <label for="interviewDateTime">Preferred Interview Date and Time:</label>
+        <input type="datetime-local" id="interviewDateTime" name="interviewDateTime"><br>
+    
+        <label for="photo">Upload Your Photo:</label>
+        <input type="file" id="photo" name="photo"><br><br>
+    
+        <input type="submit" value="Apply Now">
+    </form>   
+</main>
